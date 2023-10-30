@@ -4,6 +4,24 @@ body {
     background-color: #eff5f8;
   }
   
+
+.time {
+  flex-direction: row-reverse;
+  font-size: 30px;
+  text-align: right;
+  margin-right: auto;
+}
+
+#countdown {
+  flex-direction: row-reverse;
+  font-size: 16px;
+  text-align: right;
+}
+
+.start-button {
+  display:flex;
+}
+
   .container {
     display: block;
     margin: 60px auto;
