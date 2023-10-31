@@ -1,1 +1,2 @@
-# Quiznos
+# Quiznos 
+This assignment was hard for me to understand on how to make JS create multiple questions. I was stuck in what element or functions to start with to activate the next question. I get overwhelmed from JS after awhile when I look back at activities and don't know where to start. I did some research on https://www.w3schools.com/ to help wiht my bugs in the js code. I only got so far..
