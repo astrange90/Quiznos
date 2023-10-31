@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mini Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel ="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body> 
-    <div class="container">
-    <h1 class="time">Time Remaining</h1>
+    <header>
+    <div id="activate">
+    <button class="start-button">Start Quiz</button>
+    </div>
+</header>
+
+<main>
+    <section>
+    <div id="container">
+        <div class="answers">
+            <span class="question-amount">
+                1 of 4 Questions
+            </span>
+        <h2>What is the meaning of HTML?</h2>
+        <p>Higher Machine Text Learner</p>
+        <p>It's just HTML, there's no meaning</p>
+        <p>Hypertext Markup Language</p>
+        <p>Hidden Management Textile Language</p>
+        <h1 class="time">Time Remaining</h1>
+        </div>
+
     <h2 id= "countdown"></h2>
-    <p id="main"></p>
-    <button class="prev">
-        ◀ Previous 
-    </button>
-    <button class="next">
+    <button id="next">
         Next ▶
     </button>
-    </div>
+</main>
+
+    <Footer id="results">Results</Footer>
+   
     <script src="./script.js"></script>
 </body>
 </html>
