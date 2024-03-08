@@ -1,14 +1,36 @@
+var body = document.body;
+var startBtn = document.querySelector("start-quiz");
+var timerEl = document.querySelector(".countdown");
 
 
+var timerCount;
+var timer;
+var score = 0;
 
-var timeLeft = 10; //Changed time so I can see what my timer does when it ends, debugging
+var questions = [
+  {
+    question: "What is the meaning of HTML?",
+    choices: ["Hypertext Markup Language", "Highway", "Hidden Management", "Higher Tolerance"],
+    answer: "Hypertext Markup Language"
+  }
+];
+
+
+ function startGame() {
+  var startQuizEl = document.getElementById("start-quiz");
+  startQuizEl.setAttribute("class", "hide");
+  timerCount = 10;
+  setTime ()
+  
+}
+
 
 function setTime() {
-    var timeInterval = setInterval(function() {
-      timeLeft--;
-      timerEl.textContent = timeLeft + " Time Remaining";
+    timer = setInterval(function() {
+      timerCount--;
+      timerEl.textContent = timerCount + " Time Remaining";
 
-      if (timeLeft === 0) {
+      if (timerCount === 0) {
         clearInterval(timeInterval);
         sendMessage();
       }
@@ -22,3 +44,5 @@ function setTime() {
   }
 
   setTime();
+
+  startBtn.addEventListener("click", startGame);

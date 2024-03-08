@@ -16,67 +16,44 @@ body {
   padding-top: 20px;
 }
 
-.questions-amt {
-  border: 5px solid black;
-  border-radius: 30px;
-  height: 40px;
-  width: 300px;
+.start-quiz {
   color: aliceblue;
-  background-color: rgb(38, 41, 41);
-  position: relative;
-  bottom: 30px;
-  left: 455px;
-}
-
-h2 {
-  position: relative;
-  bottom: 40px;
-}
-
-p {
-  border: 5px solid;
-  border-radius: 30px;
-  background-color: aliceblue;
-  height: 40px;
-  width: 600px;
-  position: relative;
-  bottom: 30px;
-  left: 300px; 
-}
-
-p:hover {
-  background-color: rgb(168, 209, 253);
+  background: radial-gradient(circle, black 0%, white 120%);
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 1em;
+  max-width: 255px;
+  padding: 20px 52px;
+  position: relative;
+  top: 405px;
+  left: 655px;
 }
 
-p:active {
+.start-quiz:active {
+  color:rgb(17, 239, 106);
   font-size: 90%;
   box-shadow: 0 0 10px #000 inset; 
 }
-/* .countdown {
-  margin-left: 20px;
-} */
 
-  .start-button {
-    display:inline-block;
-    width: 10%;
-    position: absolute;
-    top: 30%;
-    right:45%;
-    background-color: rgb(15, 15, 14);
-    color: gold;
-    border-radius: 10%;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+h3 {
+  position: relative;
+  right: 45px;
+}
 
-  .start-button:hover {
-    background-color: gold;
-    color:black;
-  }
-  
-  #next {
-    display: non;
+p {
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: aliceblue;
+  height: 80px;
+  width: 600px;
+  position: relative;
+  bottom: 20px;
+  left: 300px; 
+}
+
+ #next {
+    display: none;
     background-color:aquamarine;
     font-weight: 700;
     text-align: center;
@@ -84,11 +61,6 @@ p:active {
     height: 30px;
     cursor: pointer;
   }
-
-.hide{
-  display: none;
-}
-
 
 .correct {
   background-color: lawngreen;
@@ -102,7 +74,7 @@ p:active {
   
 
   @media screen and (max-width: 768px) {
-    main {
+    body { 
       flex-direction: column;
     }
     
