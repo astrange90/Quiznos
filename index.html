@@ -3,30 +3,41 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mini Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <h3 class="countdown" style="text-align: right;"></h3>
-    <div>
-     <button class="start-quiz">Start</button>
-    </div>
+    
     <main>
         <section>
             <div class="container">
-                <h3>Coding Quiz</h3>
-                <p>Try your best to answer these code related questions within the time limit.
-                Note: If any answered incorrectly there will be a 15 seconds deducteion from the timer.
-                Good Luck!</p>
-                
-                </span>
-               
-            
+                <div id="start-quiz">
+                    <h3>Coding Quiz</h3>
+                    <p>Try your best to answer these code related questions within the time limit.
+                        Note: If any answered incorrectly there will be a 15 seconds deducteion from the timer.
+                        Good Luck!</p>
+                        <div>
+                            <button class="start-quiz">Start</button>
+                        </div>
+                </div>
+                <div id="quiz" class="hide">
+                    <h3 id="question" >Question goes here</h3>
+                    <div id="button"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
 
     <!-- <Footer id="results">Results</Footer> -->
 
     <script src="./script.js"></script>
 </body>
+
 </html>
