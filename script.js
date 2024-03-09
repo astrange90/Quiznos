@@ -70,7 +70,7 @@ function answerQuestion () {
 }
 
 function startGame() {
-  var startQuizEl = document.getElementById("start-quiz");
+  var startQuizEl = document.getElementById("quiz-rules");
   startQuizEl.setAttribute("class", "hide");
   document.getElementById("quiz").classList.remove("hide")
   timerCount = 100;
