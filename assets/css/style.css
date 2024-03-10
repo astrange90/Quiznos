@@ -31,20 +31,21 @@ body {
 }
 
 .start-quiz {
+  display: block;
+  margin: 10px auto;
   color: aliceblue;
   text-align: center;
   background: radial-gradient(circle, black 0%, white 250%);
   border-radius: 10px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 25px;
   width: auto;
   position: relative;
   bottom: 10px;
 }
 
-.start-quiz:active {
+.start-quiz:hover, .start-quiz:active {
   color: rgb(17, 239, 106);
-  font-size: 90%;
   box-shadow: 0 0 10px #000 inset;
 }
 
@@ -59,16 +60,6 @@ p {
   width: 50%;
   position: relative;
   bottom: 20px;
-}
-
-#next {
-  display: none;
-  background-color: aquamarine;
-  font-weight: 700;
-  text-align: center;
-  width: 100px;
-  height: 30px;
-  cursor: pointer;
 }
 
 .hide {
